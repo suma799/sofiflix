@@ -19,7 +19,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 			redirect: {
 				permanent: false,
 				destination: `${
-					`https://sofiflic.000webhostapp.com/`
+					`https://sofiflic.000webhostapp.com/`+ encodeURI(path as string)
 				}`,
 			},
 		};
